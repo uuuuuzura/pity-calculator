@@ -5,27 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genshin Impact Pity Calculator</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header>
-      <h1>Genshin Impact Pity Calculator</h1>
-    </header>
-    <main>
-      <form>
-        <p>
-          <label for="intertwinedFates">Intertwined Fates</label>
-          <input type="number" name="intertwinedFates" id="intertwinedFates">
-        </p>
-        <p>
-          <label for="primogems">Primogems</label>
-          <input type="number" name="primogems" id="primogems">
-        </p>
-        <button type="button" name="calculatePity" id="calculatePity">Calculate Pity</button>
-      </form>
-      <div id="primogemCalculation"></div>
-    </main>
-
+    <div class="container">
+      <header>
+        <h1>Genshin Impact Pity Calculator</h1>
+      </header>
+      <main>
+        <form>
+          <p>
+            <label for="intertwinedFates">Intertwined Fates</label>
+            <input type="number" name="intertwinedFates" id="intertwinedFates">
+          </p>
+          <p>
+            <label for="primogems">Primogems</label>
+            <input type="number" name="primogems" id="primogems">
+          </p>
+          <button type="button" name="calculatePity" id="calculatePity">Calculate Pity</button>
+        </form>
+        <div id="primogemCalculation"></div>
+      </main>
+    </div>
     <script src="script.js" charset="utf-8"></script>
   </body>
 </html>

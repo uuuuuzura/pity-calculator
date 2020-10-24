@@ -3,60 +3,92 @@
 }
 
 body {
-  font-family: Arial, serif;
+  font-family: 'PT Serif', serif;
   font-size: 16px;
+  color: #2c3e50;
   margin: 0;
   padding: 0;
+  background-color: #588db9;
+  background-image: linear-gradient(rgba(88, 141, 185, 0.3), transparent),
+                    url(robynne-hu-pjsrHjXGnVs-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-header, main {
-  padding: 0.5rem;
-}
-
-header {
-  margin: 1.5rem 0;
-}
-
-main {
-  margin: auto;
+.container {
+  background-color: #fff;
+  margin: 3.75rem auto 0;
+  border-radius: 0.5rem;
   max-width: 25rem;
+  padding: 1rem;
 }
 
 h1 {
-  font-size: 1.5rem;
-  margin: 0;
+  font-size: 2.369rem;
+  margin: 0 0 2.5rem;
   text-align: center;
 }
 
-label {
+label,
+.calculation-label {
+  color: #8395a7;
   display: block;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  font-size: 1rem;
+}
+
+.calculation-label {
+  margin: 2rem 0 0;
 }
 
 input {
-  border: 1px solid #ecf0f1;
+  font-family: 'PT Serif', serif;
+  border: 1px solid #c8d6e5;
   border-radius: 0.25rem;
   display: block;
   margin: 0;
   padding: 0.5rem;
   width: 100%;
+  font-size: 1.777rem
+}
+
+input:focus {
+  outline-style: none;
+  box-shadow: 0px 0px 10px 2px rgba(72, 110, 144, 0.2)
 }
 
 button {
-  background-color: #1abc9c;
+  cursor: pointer;
+  font-family: 'PT Serif', serif;
+  background-color: #588db9;
+  background-image: linear-gradient(to right, #588db9 0%, #486e90 51%);
   border: none;
-  border-radius: 0.25rem;
-  box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.25);
-  color: #fff;
   display: block;
-  font-size: 1rem;
-  padding: 0.5rem;
   width: 100%;
+  border-radius: 0.25rem;
+  color: #fff;
+  font-size: 1.333rem;
+  padding: 1rem 0.5rem;
+  margin-top: 2rem;
+  letter-spacing: 0.05rem;
+}
+
+button:focus {
+  outline-style: none;
+  box-shadow: 0px 0px 10px 2px rgba(72, 110, 144, 0.5)
 }
 
 #primogemCalculation {
-  font-size: 1.2rem;
-  margin-top: 2rem;
-  text-align: center;
+  font-size: 2.369rem;
+}
+
+@media (min-width: 400px) {
+  .container {
+    padding: 2rem;
+  }
 }

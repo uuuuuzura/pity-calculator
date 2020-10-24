@@ -24,5 +24,5 @@ function calculatePity() {
     primogemsRequiredForPity = 0;
   }
 
-  printContainer.innerHTML = "<b>Primogems required for pity:</b> " + primogemsRequiredForPity;
+  printContainer.innerHTML = "<span class=\"calculation-label\">Primogems required for pity:</span> " + primogemsRequiredForPity;
 }
