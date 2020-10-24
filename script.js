@@ -3,19 +3,19 @@ const PITY = 90;
 
 const printContainer = document.getElementById('primogemCalculation');
 
-const fateInput = document.getElementById('intertwinedFates');
+const fateInput = document.getElementById('fates');
 const primogemInput = document.getElementById('primogems');
 const calculateButton = document.getElementById('calculatePity');
 
 calculateButton.addEventListener('click', calculatePity);
 
 function calculatePity() {
-  let intertwinedFates = parseInt(fateInput.value);
-  let primogems = parseInt(primogemInput.value);
+  let fatesOnHand = parseInt(fateInput.value);
+  let primogemsOnHand = parseInt(primogemInput.value);
 
-  let boughtFates = Math.floor(primogems/COST_OF_FATE);
-  let remainingPrimogems = primogems % COST_OF_FATE;
-  let totalFates = boughtFates + intertwinedFates;
+  let boughtFates = Math.floor(primogemsOnHand/COST_OF_FATE);
+  let remainingPrimogems = primogemsOnHand % COST_OF_FATE;
+  let totalFates = boughtFates + fatesOnHand;
 
   let fatesRequiredForPity = PITY - totalFates;
   let primogemsRequiredForPity = (fatesRequiredForPity * COST_OF_FATE) - remainingPrimogems;

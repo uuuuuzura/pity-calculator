@@ -3,26 +3,35 @@
 }
 
 body {
-  font-family: 'PT Serif', serif;
-  font-size: 16px;
-  color: #2c3e50;
-  margin: 0;
-  padding: 0;
+  background-attachment: fixed;
   background-color: #588db9;
   background-image: linear-gradient(rgba(88, 141, 185, 0.3), transparent),
                     url(robynne-hu-pjsrHjXGnVs-unsplash.jpg);
-  background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: cover;
+
+  color: #2c3e50;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+
+  font-family: 'PT Serif', serif;
+  font-size: 16px;
+
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
   background-color: #fff;
-  margin: 3.75rem auto 0;
   border-radius: 0.5rem;
-  max-width: 25rem;
+  margin: 3.75rem auto 0;
   padding: 1rem;
+  max-width: 25rem;
 }
 
 h1 {
@@ -35,56 +44,76 @@ label,
 .calculation-label {
   color: #8395a7;
   display: block;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08rem;
   font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.08rem;
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+}
+
+input {
+  border: 1px solid #c8d6e5;
+  border-radius: 0.25rem;
+  display: block;
+  font-family: 'PT Serif', serif;
+  font-size: 1.777rem;
+  margin: 0;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+input:focus {
+  box-shadow: 0px 0px 10px 2px rgba(72, 110, 144, 0.2);
+  outline-style: none;
+}
+
+button {
+  background-color: #588db9;
+  background-image: linear-gradient(to right, #588db9 0%, #486e90 51%);
+  border: none;
+  border-radius: 0.25rem;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+
+  font-family: 'PT Serif', serif;
+  font-size: 1.333rem;
+  letter-spacing: 0.05rem;
+
+  margin: 2rem 0 0;
+  padding: 1rem 0.5rem;
+  width: 100%;
+}
+
+button:focus {
+  box-shadow: 0px 0px 10px 2px rgba(72, 110, 144, 0.5);
+  outline-style: none;
+}
+
+#primogemCalculation {
+  font-size: 2.369rem;
 }
 
 .calculation-label {
   margin: 2rem 0 0;
 }
 
-input {
-  font-family: 'PT Serif', serif;
-  border: 1px solid #c8d6e5;
-  border-radius: 0.25rem;
-  display: block;
-  margin: 0;
-  padding: 0.5rem;
-  width: 100%;
-  font-size: 1.777rem
-}
-
-input:focus {
-  outline-style: none;
-  box-shadow: 0px 0px 10px 2px rgba(72, 110, 144, 0.2)
-}
-
-button {
-  cursor: pointer;
-  font-family: 'PT Serif', serif;
-  background-color: #588db9;
-  background-image: linear-gradient(to right, #588db9 0%, #486e90 51%);
-  border: none;
-  display: block;
-  width: 100%;
-  border-radius: 0.25rem;
+footer {
   color: #fff;
-  font-size: 1.333rem;
-  padding: 1rem 0.5rem;
-  margin-top: 2rem;
-  letter-spacing: 0.05rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  padding: 1rem;
+  text-align: center;
 }
 
-button:focus {
-  outline-style: none;
-  box-shadow: 0px 0px 10px 2px rgba(72, 110, 144, 0.5)
+a {
+  border-bottom: 1px dotted;
+  color: #588db9;
+  text-decoration: none;
 }
 
-#primogemCalculation {
-  font-size: 2.369rem;
+a:hover {
+  color: #486e90;
 }
 
 @media (min-width: 400px) {
