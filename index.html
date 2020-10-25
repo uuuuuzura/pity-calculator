@@ -17,11 +17,13 @@
         <form>
           <p>
             <label for="fates">Fates</label>
-            <input type="number" name="fates" id="fates">
+            <input type="number" name="fates" id="fates" min="0" value="0">
+            <span class="validation-message">Please enter a whole number</span>
           </p>
           <p>
             <label for="primogems">Primogems</label>
-            <input type="number" name="primogems" id="primogems">
+            <input type="number" name="primogems" id="primogems" min="0" value="0">
+            <span class="validation-message">Please enter a whole number</span>
           </p>
           <button type="button" name="calculatePity" id="calculatePity">Calculate Pity</button>
         </form>

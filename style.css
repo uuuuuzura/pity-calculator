@@ -67,6 +67,21 @@ input:focus {
   outline-style: none;
 }
 
+input.invalid {
+  border: 1px solid #c0392b;
+}
+
+.validation-message {
+  color: #c0392b;
+  display: none;
+  font-size: 0.75rem;
+  letter-spacing: 0.02rem;
+}
+
+input.invalid + .validation-message {
+  display: inline;
+}
+
 button {
   background-color: #588db9;
   background-image: linear-gradient(to right, #588db9 0%, #486e90 51%);
