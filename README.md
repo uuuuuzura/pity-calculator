@@ -7,7 +7,6 @@ Input the number of fates (Intertwined or Acquaint only) and primogems in your i
 ## Planned Features
 * Toggle the pity between 90 pulls and 180 pulls
 * Add genesis crystals into the calculation
-* Add previously made wishes or a custom pity limit to the calculation
 
 ## Credits
 Background photo by [Robynne Hu](https://unsplash.com/@robynnexy) on [Unsplash](https://unsplash.com)
